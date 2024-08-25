@@ -1,0 +1,253 @@
+/* Body Style */
+body {
+    height: fit-content;
+    position: relative;
+    background-color: #e2e8f0;
+    transition: all 0.7s;
+  } body.not-home {
+    height: fit-content;
+    position: relative;
+    background-color: #e2e8f0;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+
+/* Page Style */
+.page-title {
+    font-size: 40px;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    transition: all 0.7s;
+}
+
+
+/* NavBar Style */
+nav {
+    width: 100%; height: 60px;
+    top: 0px; z-index: 999;
+    position: fixed;
+    transition: all 0.7s;
+
+  } nav.bg-color {
+    background-color: #1d4fd8da;
+    backdrop-filter: blur(10px);
+    
+}
+
+.nav-title {
+    color: #e2e8f0;
+    font-size: 20px;
+    margin-left: 80px;
+    transition: all 0.7s;
+
+  } .nav-menu {
+    display: block;
+
+  } .nav-active {
+    color: #e2e8f0;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    margin-right: 30px;
+    transition: all 0.2s;
+
+  } .nav-nonactive {
+    color: #e2e8f080;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 0px;
+    margin-right: 30px;
+    transition: all 0.2s;
+
+  } .nav-active:hover {
+    color: #e2e8f0;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    margin-right: 30px;
+    transition: all 0.2s;
+
+  } .nav-nonactive:hover {
+    color: #e2e8f0;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    margin-right: 30px;
+    transition: all 0.2s;
+}
+
+
+/* NavBar Style (Mobile)*/
+.nav-hamburger {
+    visibility: hidden;
+    padding: 6px 7px 5px 7px;
+    margin-top: 12px;
+    right: 23px;
+    font-size: 25px;
+    color: #e2e8f0;
+    position: absolute;
+    background-color: #e2e8f000;
+    z-index: 11;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+  } .nav-hamburger.open {
+    background-color: #e2e8f0b7;
+    backdrop-filter: blur(5px);
+    color: #0f172a;
+
+  } .nav-hamburger:hover {
+    background-color: #0f172a44;
+    color: #e2e8f0;
+}
+
+.hamburger-menu {
+    display: none;
+    background-color: #e2e8f0b7;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 130px;
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 0px 50px 4px rgb(0 0 0 / 0.25);
+    border-radius: 10px;
+    border-color: #0f172a;
+    z-index: 10;
+    right: 23px;
+    top: 70px;
+    transition: all 0.7s;
+
+  } .hamburger-menu.open {
+    display: block;
+
+}
+
+.hamburger-list { 
+    height: 38px;
+    align-content: center;
+    margin: 10px 10px 0px 10px;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    border-radius: 5px;
+    transition: all 0.2s;
+
+  } .hamburger-list.bottom {
+    margin: 10px 10px 10px 10px;
+  }
+  
+  .hamburger-list.nonactive {
+    height: 38px;
+    align-content: center;
+    margin: 10px 10px 0px 10px;
+    background-color: #0f172a88;
+    color: #e2e8f0e0;
+    border-radius: 5px;
+    transition: all 0.2s;
+
+  } .hamburger-list.nonactive:hover {
+    background-color: #0f172a;
+    color: #e2e8f0;
+
+  } .hamburger-list.nonactive.bottom {
+    margin: 10px 10px 10px 10px;
+
+  } .hamburger-list.nonactive.bottom:hover {
+    background-color: #0f172a;
+    color: #e2e8f0;;
+
+  } .hamburger-list-size {
+    font-size: 18px;
+    width: 100px;
+}
+
+
+/* Bug Report Button */
+.bugreport-button {
+    width: 150px;
+    height: 60px;
+    background-color: #ffffff;
+    align-content: center;
+    box-shadow: 0 0px 30px 1px #0f172a33;
+    border-radius: 50px;
+    bottom: 3vh;
+    right: 3vh;
+    position: fixed;
+    z-index: 9;
+    cursor: pointer;
+    transition: all 0.2s;
+
+  } .bugreport-button.text {
+    font-size: 20px;
+    text-align: center;
+    color: #0f172a;
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 700px) {
+    /* NavBar Style */
+    .nav-title {
+        margin-left: 30px;
+      } .nav-menu {
+        display: none;
+      } .nav-hamburger {
+        visibility: visible;
+      } .hamburger-menu {
+        visibility: visible;
+    }
+
+    /* Page Style */
+    .page-title {
+        font-size: 40px;
+        text-align: unset;
+        margin: 0px 0px 20px 30px;
+    }
+
+}
+
+
+/* ScrollBar Style */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #1d4fd8da; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; }
+::-webkit-scrollbar-thumb:hover { background: #ffffff; }
+
+
+/* Font */
+.prompt-thin {
+    font-family: "Prompt", sans-serif; font-weight: 100; font-style: normal; }
+.prompt-extralight {
+    font-family: "Prompt", sans-serif; font-weight: 200; font-style: normal; }
+.prompt-light {
+    font-family: "Prompt", sans-serif; font-weight: 300; font-style: normal; }
+.prompt-normal {
+    font-family: "Prompt", sans-serif; font-weight: 400; font-style: normal; }
+.prompt-medium {
+    font-family: "Prompt", sans-serif; font-weight: 500; font-style: normal; }
+.prompt-semibold {
+    font-family: "Prompt", sans-serif; font-weight: 600; font-style: normal; }
+.prompt-bold {
+    font-family: "Prompt", sans-serif; font-weight: 700; font-style: normal; }
+.prompt-extrabold {
+    font-family: "Prompt", sans-serif; font-weight: 800; font-style: normal; }
+.prompt-black {
+    font-family: "Prompt", sans-serif; font-weight: 900; font-style: normal; }
+  
+.prompt-thin-italic {
+    font-family: "Prompt", sans-serif; font-weight: 100; font-style: italic; }
+.prompt-extralight-italic {
+    font-family: "Prompt", sans-serif; font-weight: 200; font-style: italic; }
+.prompt-light-italic {
+    font-family: "Prompt", sans-serif; font-weight: 300; font-style: italic; }
+.prompt-regular-italic {
+    font-family: "Prompt", sans-serif; font-weight: 400; font-style: italic; } 
+.prompt-medium-italic {
+    font-family: "Prompt", sans-serif; font-weight: 500; font-style: italic; }
+.prompt-semibold-italic {
+    font-family: "Prompt", sans-serif; font-weight: 600; font-style: italic; }
+.prompt-bold-italic {
+    font-family: "Prompt", sans-serif; font-weight: 700; font-style: italic; }
+.prompt-extrabold-italic {
+    font-family: "Prompt", sans-serif; font-weight: 800; font-style: italic; }
+.prompt-black-italic {
+    font-family: "Prompt", sans-serif; font-weight: 900; font-style: italic; }
